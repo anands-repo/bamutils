@@ -55,7 +55,7 @@ for i, read in enumerate(samfile.fetch()):
 		target_bam.write(read);
 
 	if (i+1) % 100000 == 0:
-		print "Processed %d reads ..." %(i+1);
+		print("Processed %d reads ..." %(i+1));
 
 # Close files
 bclose = lambda x : x.close();
